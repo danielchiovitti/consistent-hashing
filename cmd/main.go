@@ -54,7 +54,7 @@ func (h *HashRing) checkPosition(position int) bool {
 	return false
 }
 
-func distribuirPontos(numPontos int) {
+func balanceNodes(numPontos int) {
 	incDegree := float64(ringDegrees) / float64(numPontos)
 
 	for i := 0; i < numPontos; i++ {
@@ -65,6 +65,5 @@ func distribuirPontos(numPontos int) {
 }
 
 func main() {
-	distribuirPontos(8)
-	//fmt.Println(rand.Intn(360))
+	balanceNodes(8)
 }
