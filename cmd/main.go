@@ -65,5 +65,5 @@ func balanceNodes(numPoints int) {
 }
 
 func main() {
-	balanceNodes(8)
+	fmt.Println("starting")
 }
