@@ -54,10 +54,10 @@ func (h *HashRing) checkPosition(position int) bool {
 	return false
 }
 
-func balanceNodes(numPontos int) {
-	incDegree := float64(ringDegrees) / float64(numPontos)
+func balanceNodes(numPoints int) {
+	incDegree := float64(ringDegrees) / float64(numPoints)
 
-	for i := 0; i < numPontos; i++ {
+	for i := 0; i < numPoints; i++ {
 		degree := float64(i) * incDegree
 		degree = math.Mod(degree, float64(ringDegrees))
 		fmt.Println(degree)
